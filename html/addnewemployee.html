@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <nav class="p-5 navbar navbar-expand-md navbar-light" style="background-color: #13be9e;">
+            <label class="font-weight-bold text-uppercase text-light" id="usernamelbl">Welcome Admin</label>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button id="btndashboard" type="submit" class="btn btn-dark">
+                            <i class="fa fa-tasks">&nbsp;Dashboard</i>
+                        </button>
+                        <button id="btnlogout" type="submit" class="btn btn-dark">
+                            <i class="fa fa-power-off">&nbsp;logout</i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="allemployees-tab" data-toggle="tab" href="#allemployees" role="tab"
+                    aria-controls="allemployees" aria-selected="true">Add New Employees</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="allemployees" role="tabpanel" aria-labelledby="allemployees-tab">
+                <table class="table table-hover table-dark mt-4">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Employee Name</th>
+                            <th colspan="2" class="" scope="col">Manage Employee</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <pre>
+
+        </pre>
+
+    <footer>
+        <div class="pl-5 col-12 jumbotron text-light" style="background-color: #000000;margin-bottom:0">
+            <div class="row pl-3 font-weight-bold">
+                <div class="col-4">
+                    <p>MY LINKS</p>
+                    <a href="#">Twitter &nbsp;</a><i class="fab fa-twitter"></i><br>
+                    <a href="#">Facebook &nbsp;</a><i class="fab fa-facebook"></i>
+                </div>
+                <div class="col-4 mt-2">
+                    <p>MY STORY</p>
+                    <h6>Hi there! hope enjoy my website</h6>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../js/addnewemployee.js"></script>
+
+</body>
+
+</html>

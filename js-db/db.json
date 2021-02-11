@@ -1,0 +1,214 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "firstname": "Ahmed",
+      "lastname": "Ebrahim",
+      "address": "Cairo",
+      "email": "4liebrahim@gmail.com",
+      "age": "20"
+    },
+    {
+      "firstname": "Taha",
+      "lastname": "Eslam",
+      "address": "Alsalam",
+      "email": "4liebrahim@gmail.com",
+      "age": "34",
+      "id": 974436
+    }
+  ],
+  "addedemployees": [
+    {
+      "username": "omarl4v@mycomp",
+      "password": "fT0DG",
+      "email": "4liebrahim@gmail.com",
+      "firstname": "Omar",
+      "lastname": "Ebrahim",
+      "address": "Mahala",
+      "age": "30",
+      "id": "39DspiC"
+    },
+    {
+      "username": "adelptd@mycomp",
+      "password": "by3EL",
+      "email": "4liebrahim@gmail.com",
+      "firstname": "Adel",
+      "lastname": "Giar",
+      "address": "Japan",
+      "age": "25",
+      "id": "rzkHy6u"
+    },
+    {
+      "username": "saly04g@mycomp",
+      "password": "neSKH",
+      "email": "4liebrahim@gmail.com",
+      "firstname": "Saly",
+      "lastname": "mohammed",
+      "address": "Nasr City",
+      "age": "23",
+      "id": "8yg2Wp0"
+    },
+    {
+      "username": "eslamyky@mycomp",
+      "password": "TCLYC",
+      "email": "4liebrahim@gmail.com",
+      "firstname": "Eslam",
+      "lastname": "lotfy",
+      "address": "Nasr City",
+      "age": "39",
+      "id": "aKdseNI"
+    },
+    {
+      "username": "beheryzze@mycomp",
+      "password": "2mmyV",
+      "email": "4liebrahim@gmail.com",
+      "firstname": "Behery",
+      "lastname": "Saeed",
+      "address": "Cairo",
+      "age": "24",
+      "id": "Wbjou2_"
+    },
+    {
+      "username": "alij6h@mycomp",
+      "password": "H7Enw",
+      "email": "4liebrahim@gmail.com",
+      "firstname": "Ali",
+      "lastname": "Ebrahim",
+      "address": "Mansoura",
+      "age": "25",
+      "id": "OPgGDUy"
+    },
+    {
+      "username": "khaledmvg@mycomp",
+      "password": "SxKau",
+      "email": "4liebrahim@gmail.com",
+      "firstname": "Khaled",
+      "lastname": "Moustafa",
+      "address": "Alexandria",
+      "age": "27",
+      "id": "lNW_qZf"
+    }
+  ],
+  "attendance": [
+    {
+      "emp_username": "beheryzze@mycomp",
+      "attendancedate": "2021-02-10T07:07:29.619Z",
+      "late": 0,
+      "id": "q3zN-uh",
+      "firstname": "Behery",
+      "lastname": "Saeed"
+    },
+    {
+      "emp_username": "beheryzze@mycomp",
+      "attendancedate": "2021-02-11T23:56:12.235Z",
+      "late": 0,
+      "id": "_hEDj0D",
+      "firstname": "Behery",
+      "lastname": "Saeed"
+    },
+    {
+      "emp_username": "beheryzze@mycomp",
+      "attendancedate": "2021-02-14T07:25:39.813Z",
+      "late": 0,
+      "id": "OzxK1M4",
+      "firstname": "Behery",
+      "lastname": "Saeed"
+    },
+    {
+      "emp_username": "beheryzze@mycomp",
+      "attendancedate": "2021-02-15T07:58:38.701Z",
+      "late": 1,
+      "id": "PmUAUBq",
+      "firstname": "Behery",
+      "lastname": "Saeed"
+    },
+    {
+      "emp_username": "alij6h@mycomp",
+      "attendancedate": "2021-02-10T07:07:29.619Z",
+      "late": 0,
+      "id": "Xt52aBm",
+      "firstname": "Ali",
+      "lastname": "Ebrahim"
+    },
+    {
+      "emp_username": "alij6h@mycomp",
+      "attendancedate": "2021-02-11T07:07:29.619Z",
+      "late": 0,
+      "id": "y1K1y2b",
+      "firstname": "Ali",
+      "lastname": "Ebrahim"
+    },
+    {
+      "emp_username": "alij6h@mycomp",
+      "attendancedate": "2021-02-12T07:07:29.619Z",
+      "late": 0,
+      "id": "YqU32pp",
+      "firstname": "Ali",
+      "lastname": "Ebrahim"
+    },
+    {
+      "emp_username": "alij6h@mycomp",
+      "attendancedate": "2021-02-17T07:58:38.701Z",
+      "late": 1,
+      "id": "_3nDDkv",
+      "firstname": "Ali",
+      "lastname": "Ebrahim"
+    },
+    {
+      "emp_username": "alij6h@mycomp",
+      "attendancedate": "2021-02-18T07:58:38.701Z",
+      "late": 1,
+      "id": "nWNvYDK",
+      "firstname": "Ali",
+      "lastname": "Ebrahim"
+    },
+    {
+      "emp_username": "alij6h@mycomp",
+      "attendancedate": "2021-02-19T10:33:20.481Z",
+      "late": 1,
+      "id": "SJaSYCh",
+      "firstname": "Ali",
+      "lastname": "Ebrahim"
+    },
+    {
+      "emp_username": "alij6h@mycomp",
+      "attendancedate": "2021-02-20T10:40:33.594Z",
+      "late": 1,
+      "id": "beOhMss",
+      "firstname": "Ali",
+      "lastname": "Ebrahim"
+    },
+    {
+      "emp_username": "alij6h@mycomp",
+      "attendancedate": "2021-02-21T10:45:57.069Z",
+      "late": 1,
+      "id": "aafJkzM",
+      "firstname": "Ali",
+      "lastname": "Ebrahim"
+    },
+    {
+      "emp_username": "omarl4v@mycomp",
+      "attendancedate": "2021-02-11T12:49:46.190Z",
+      "late": 1,
+      "firstname": "Omar",
+      "lastname": "Ebrahim",
+      "id": "NUzsCeC"
+    },
+    {
+      "emp_username": "omarl4v@mycomp",
+      "attendancedate": "2021-02-15T15:26:57.675Z",
+      "late": 1,
+      "firstname": "Omar",
+      "lastname": "Ebrahim",
+      "id": "Y9q5tSK"
+    },
+    {
+      "emp_username": "khaledmvg@mycomp",
+      "attendancedate": "2021-02-11T17:19:31.026Z",
+      "late": 1,
+      "firstname": "Khaled",
+      "lastname": "Moustafa",
+      "id": "QhXhdMa"
+    }
+  ]
+}

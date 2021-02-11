@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+  <title>Profile</title>
+
+  <script src="../js/emprofile.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="p-5 navbar navbar-expand-md navbar-light" style="background-color: #13be9e;">
+      <label class="font-weight-bold text-uppercase text-light" id="usernameWelcomeLbl"></label>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button id="btnlogout" type="submit" class="btn btn-dark">
+              <i class="fa fa-power-off">&nbsp;logout</i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container mt-5" id="grandparent">
+      <div id="parentforcards">
+        <!--card one-->
+        <div id="cardone" class="card">
+          <div class="card-header">
+            <!-- <p class="card-title">Card Title</p> -->
+            <button class="btn text-light font-weight-bold w-100" style="background-color: #000000;"
+              data-toggle="collapse" data-target="#bodyandfooter">Make Attendance</button>
+          </div>
+          <div class="collapse show" id="bodyandfooter" data-parent="#parentforcards">
+            <div class="card-body text-center" style="background-color: #ffffff;">
+              <section class="h-100 w-100">
+                <div class="container h-100">
+                  <div class="row justify-content-md-center h-100">
+                    <div class="card-wrapper">
+                      <div class="card fat" style="background-color: #13be9e;">
+                        <div class="card-body">
+                          <!--display if confirmed attendance-->
+
+                          <div id="alertsuccess1" class="alert alert-success" style="display: none;">
+                            <strong>Success!</strong> You Confirmed Your Attendance! Enjoy your Day ...
+                          </div>
+                          <!--end of display if confirmed attendance-->
+
+                          <!--display if not confirmed attendance-->
+
+                          <div id="alertfailed1" class="alert alert-danger" style="display: none;">
+                            <strong>Danger!</strong> You Didn't Confirm Your Attendance, Please Confirm It ...
+                          </div>
+
+
+                          <!--end of display if not confirmed attendance-->
+
+                          <h4 class="card-title">Confirm Attendance</h4>
+
+                          <form method="dialog" id="formconfirmattend">
+                            <div class="form-group">
+                              <label for="username">User Name</label>
+                              <input id="usernametxt" type="text" class="form-control" name="username" value="" required
+                                autofocus>
+                              <!-- <div class="form-text text-muted">
+                                    By clicking "Reset Password" you can then check your email..
+                                </div> -->
+                            </div>
+
+                            <div class="form-group m-0">
+                              <button type="submit" id="confirmbtn" class="btn btn-block text-light"
+                                style="background-color: #000000;">
+                                Confirm
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+              </section>
+
+
+
+            </div>
+            <div class="card-footer">
+
+            </div>
+          </div>
+        </div>
+        <!--end of card one-->
+
+        <!--card two-->
+        <div id="cardone" class="card">
+          <div class="card-header">
+            <!-- <p class="card-title">Card Title</p> -->
+            <button class="btn text-light font-weight-bold w-100" style="background-color: #000000;"
+              data-toggle="collapse" data-target="#bodyandfooter2">Check Status</button>
+
+          </div>
+          <div class="collapse" id="bodyandfooter2" data-parent="#parentforcards">
+            <div class="card-body text-center" style="background-color: #ffffff;">
+              <!--check status body-->
+              <div id="alertsuccess2" class="alert alert-success">
+                <strong>Success!</strong> You Confirmed Your Attendance! Enjoy your Day ...
+              </div>
+
+              <div id="alertfailed2" class="alert alert-danger">
+                <strong>Danger!</strong> You Didn't Confirm Your Attendance, Please Confirm It ...
+              </div>
+
+
+
+              <!-- Button trigger modal -->
+              <button id="btnshowstatus" type="button" class="btn btn-success" data-toggle="modal"
+                data-target="#exampleModalCenter">
+                Show Time
+              </button>
+
+              <!-- Modal modal dialog -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 id="statusWelcomeh5" class="modal-title">Welcome Ali</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+
+                      <label>Employee Name :</label> <label id="lblempnameconfirmed"> Ali Ebrahim</label><br>
+                      <label>Attendance Time : </label> <label id="lblattendancetime"> 8:45 am</label>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--end of modal dialog-->
+
+
+              <!-- end of check status body-->
+            </div>
+            <div class="card-footer">
+            </div>
+          </div>
+        </div>
+        <!--end of card two-->
+
+        <!--card three-->
+        <div id="cardone" class="card">
+          <div class="card-header">
+            <!-- <p class="card-title">Card Title</p> -->
+            <button id="showreportbtn" class="btn text-light font-weight-bold w-100" style="background-color: #000000;"
+              data-toggle="collapse" data-target="#bodyandfooter3">Show Reports</button>
+          </div>
+          <div class="collapse" id="bodyandfooter3" data-parent="#parentforcards">
+            <div class="card-body text-center" style="background-color: #ffffff;">
+
+              <!--show reports body-->
+
+              <div class="container">
+                <button id="btnshowreportname" type="button" class="btn btn-primary disabled">Employee</button>
+
+              </div>
+              <!---->
+              <div class="container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="dailyreport-tab" data-toggle="tab" href="#monthlyreport" role="tab"
+                      aria-controls="home" aria-selected="true">Monthly Report</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="dailyreport-tab" data-toggle="tab" href="#dailyreport" role="tab"
+                      aria-controls="profile" aria-selected="false">Daily Report</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="monthlyreport" role="tabpanel"
+                    aria-labelledby="monthlyreport-tab">
+                    <label class="mt-5">Total Days : </label> <label id="lbltotalDays"></label><br>
+                    <label>Attendance Time : </label> <label id="lblAttendMonthly"></label><br>
+                    <label>Late Time :</label> <label id="lblLateMonthly"></label><br>
+                    <label>Absence Time :</label> <label id="lblAbsenceMonthly"></label><br>
+                  </div>
+                  <div class="tab-pane fade" id="dailyreport" role="tabpanel" aria-labelledby="dailyreport-tab">
+
+                    <label class="mt-5">Employee Name :</label> <label id="lblreportemp"> Employee</label><br>
+                    <label>Attendance Time : </label> <label id="lblshowtimereport"> </label>
+                  </div>
+                </div>
+              </div>
+              <!---->
+
+            </div>
+            <!--show reports body-->
+            <div class="card-footer">
+
+            </div>
+          </div>
+        </div>
+        <!--end of card three-->
+      </div>
+      <!--end of parentforcards div-->
+    </div>
+    </div>
+  </section>
+  <pre>
+
+
+
+
+  </pre>
+  <footer>
+    <div class="pl-5 col-12 jumbotron text-light" style="background-color: #000000;margin-bottom:0">
+      <div class="row pl-3 font-weight-bold">
+        <div class="col-4">
+          <p>MY LINKS</p>
+          <a href="#">Twitter &nbsp;</a><i class="fab fa-twitter"></i><br>
+          <a href="#">Facebook &nbsp;</a><i class="fab fa-facebook"></i>
+        </div>
+        <div class="col-4 mt-2">
+          <p>MY STORY</p>
+          <h6>Hi there! hope enjoy my website</h6>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+  <script>
+
+
+  </script>
+</body>
+
+</html>
